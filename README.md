@@ -22,7 +22,7 @@ scripts .sh -> shells to create DynamoDB tables and ingest raws.
 scripts .py -> python scripts to create a .csv file and upload to S3 bucket
 
 ## Architecture
-![Arquitectura](/assets/arquitectura.png)
+![Arquitectura](/assets/architecture.png)
 
 ## Config AWS Services
 
