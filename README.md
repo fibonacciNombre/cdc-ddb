@@ -3,22 +3,22 @@ CDC from DynamoDB
 
 ## Scripts
 
- `
+ ```shell
  chmod +x create_ddb.sh
  ./create_ddb.sh
- `
+ ```
 
- `
+ ```shell
  chmod +x load_data_ddb.sh
  ./load_data_ddb.sh
- `
+ ```
 
 
 ## Environment
-ejecutado desde un profile de aws
+Execute from an AWS profile
 
 ## Sources
-scripts -> shells de creación de Tablas de Dynamo e Ingesta de datos
+scripts -> shells to create DynamoDB tables and ingest raws.
 
 ## Architecture
 ![Arquitectura](/assets/arquitectura.png)
@@ -35,7 +35,7 @@ scripts -> shells de creación de Tablas de Dynamo e Ingesta de datos
 ![S3](/assets/s3.png)
 
 ### Glue Crawler
-![Glue Crawler](/assets/crawler.png
+![Glue Crawler](/assets/crawler.png)
 
 ### Glue Catalog
 ![Glue Catalog](/assets/glue_catalog.png)
@@ -44,6 +44,8 @@ scripts -> shells de creación de Tablas de Dynamo e Ingesta de datos
 ![Athena](/assets/athena.png)
 
 ## DDL Table:
+
+ ```sql
 `CREATE EXTERNAL TABLE dev_test_cdc_s3(
   awsregion string COMMENT 'from deserializer', 
   eventid string COMMENT 'from deserializer', 
@@ -80,3 +82,4 @@ TBLPROPERTIES (
   'recordCount'='200', 
   'sizeKey'='118257', 
   'typeOfData'='file')`
+ ```
