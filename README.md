@@ -1,5 +1,5 @@
 # cdc-ddb
-CDC from DynamoDB
+CDC from DynamoDB to S3, Analytics with Athena and Glue, Reporting with Glue
 
 ## Scripts
 
@@ -18,7 +18,8 @@ CDC from DynamoDB
 Execute from an AWS profile
 
 ## Sources
-scripts -> shells to create DynamoDB tables and ingest raws.
+scripts .sh -> shells to create DynamoDB tables and ingest raws.
+scripts .py -> python scripts to create a .csv file and upload to S3 bucket
 
 ## Architecture
 ![Arquitectura](/assets/arquitectura.png)
